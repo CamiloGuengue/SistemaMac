@@ -28,5 +28,5 @@ const backArrow = document.getElementById('backArrow');
 
 backArrow.addEventListener('click', () => {
     // Redirige a la página de selección de usuario
-    window.location.href = 'login_one.html'; // ⚡ Cambia según tu ruta
+    window.location.href = 'index.html'; // ⚡ Cambia según tu ruta
 });
