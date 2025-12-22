@@ -20,7 +20,7 @@ html, body {
 .login-screen {
     width: 100%;
     height: 100%;
-    background-image: url("CMD/wallhaven-8g5p52_1920x1080.png");
+    background-image: url("wallhaven-8g5p52_1920x1080.png");
     background-size: cover;
     background-position: center;
     position: relative;

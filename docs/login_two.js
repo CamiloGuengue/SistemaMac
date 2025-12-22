@@ -3,11 +3,11 @@ let imagen;
 
 // Condicional según el usuario
 if(usuario === 'Diego'){
-    imagen = 'CMD/diego.webp';
+    imagen = 'diego.webp';
 } else if(usuario === 'Cesar'){
-    imagen = 'CMD/cesar.webp';
+    imagen = 'cesar.webp';
 } else if(usuario === 'Miguel'){
-    imagen = 'CMD/miguel.jpg';
+    imagen = 'miguel.jpg';
 } else {
     imagen = 'usuario.png'; // fallback
 }
