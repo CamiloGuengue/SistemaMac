@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center; /* centra horizontalmente */
   align-items: center;     /* centra verticalmente */
-  background-image: url("wallhaven-8g5p52_1920x1080.png");
+  background-image: "wallhaven-8g5p52_1920x1080.png";
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
