@@ -21,7 +21,7 @@ const loginArrow = document.getElementById('loginArrow');
 // Agregamos el evento click
 loginArrow.addEventListener('click', () => {
     // Aquí pones la ruta del archivo principal
-    window.location.href = '../MiniOs/index.html'; // ⚡ cambia 'principal.html' por tu archivo
+    window.location.href = '/MiniOs/index.html'; // ⚡ cambia 'principal.html' por tu archivo
 });
 
 const backArrow = document.getElementById('backArrow');
