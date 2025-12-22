@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  background-image: url('../docs/CMD/wallhaven-8g5p52_1920x1080.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Overlay oscuro + blur */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+/* Contenedor central */
+.login-container {
+  position: relative;
+  z-index: 1; /* encima del overlay */
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;  /* elementos en columna */
+  align-items: center;     /* centra horizontalmente */
+  justify-content: center; /* centra verticalmente */
+  gap: 20px;               /* espacio entre h1, círculo y contraseña */
+}
+
+/* Títulos y nombre */
+h1 {
+  font-size: 24px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Círculo del usuario */
+.user-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #0a84ff;
+  box-shadow:
+    0 0 0 4px rgba(10,132,255,0.6),
+    0 25px 50px rgba(0,0,0,0.7);
+}
+
+.user-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenedor de contraseña */
+.password-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0; /* input y botón juntos */
+  z-index: 2;
+  position: relative;
+}
+
+/* Input de contraseña */
+.password-container input {
+  padding: 10px 15px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+/* Botón de flecha */
+.password-container button {
+  padding: 10px 15px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  background-color: #0a84ff;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.password-container button:hover {
+  background-color: #3395ff;
+}
+
+#backArrow {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px 0 0 20px; /* esquinas externas redondeadas */
+  background-color: #0a84ff;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+#backArrow {
+  padding: 15px 18px;          /* aumenta el tamaño para hacerlo más circular */
+  border: none;
+  border-radius: 100% 100% 100% 100%;  /* esquinas externas redondeadas, más “círculo” */
+  background-color: #0a84ff;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;             /* un poco más grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* centra la flecha dentro del botón */
+}
+
+
+
+
+
